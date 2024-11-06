@@ -1,3 +1,7 @@
+
+const prompt = require('prompt-sync')();
+
+
 // Micro desafío 1: 
 
 // El Tech Leader nos informa que debemos efectuar un código 
@@ -37,7 +41,7 @@ console.log(`Extraigo el primer elemento del array y lo agrego al final del mism
 
 // c. Agregar al final del array dos (2) nuevos productos.
 
-electros.push("Smart tv", "Pc");
+electros.push("plancha", "Pc");
 
 console.log(`Agrego al final del array dos (2) nuevos productos: ${electros}`);
 
@@ -51,11 +55,35 @@ console.log(`Muestro por la consola la cantidad de elementos que contiene el arr
 // si existe o no el producto dentro del array. De existir, se le debe mostrar el mensaje: 
 // “Producto encontrado”. En el caso contrario mostrar el mensaje “El producto buscado no existe”.
 
+let electro = prompt("¿Qué elemento desea buscar?: ");
+
+if (electros.includes(electro) == true) {
+    console.log("Producto encontrado.");
+} else {
+
+    console.log("El producto buscado no existe.")
+
+}
+
+
 // f. Unificar todos los elementos del array en una cadena de texto (string), separando los elementos por espacios en blanco.
+
+let separadosPorEspacio = electros.join(" ");
+
+console.log(separadosPorEspacio);
+
 
 // g. Determinar la cantidad de elementos que posee la cadena de texto obtenida.
 
+let nuevoElectros = separadosPorEspacio.split(" ");
+
+console.log(`La cantidad de elementos que posee la cadena de texto obtenida es: ${nuevoElectros.length}.`);
+
+
 // h. Cambiar el nombre de algún producto de la cadena de texto por otro, valiéndose de la función adecuada para ello.
+
+let nuevoElectros1 = separadosPorEspacio.replace("airfryer", "secarropas");
+console.log(nuevoElectros1); 
 
 // i.Con la cadena de texto obtenida generar un nuevo array con cada una de las palabras de la cadena de texto. 
 // Tener en cuenta que los elementos deben estar separados por una coma. En todos los casos se debe mostrar por consola el resultado obtenido.
