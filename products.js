@@ -8,6 +8,8 @@
 
 let electros = ["cocina", "microondas", "airfryer", "heladera", "freezer", "lavarropas"];
 
+console.log(`Este es el array principal: "${electros}"`)
+
 
 // Ejecutar sobre el array creado las siguientes acciones:
 
@@ -21,14 +23,29 @@ let elSegundoElemento = electros[1];
 
 let elTercerElemento = electros[2];
 
-console.log(elPrimerElemento, elSegundoElemento, elTercerElemento)
+console.log(`Accedo de manera arbitraria a diferentes elementos del array: "${elPrimerElemento}, ${elSegundoElemento}, ${elTercerElemento}"`)
 
 
 // b. Extraer el primer elemento del array y agregarlo al final del mismo.
 
+let primerElectro = electros.shift();
+
+electros.push(primerElectro);
+
+console.log(`Extraigo el primer elemento del array y lo agrego al final del mismo: "${electros}"`);
+
+
 // c. Agregar al final del array dos (2) nuevos productos.
 
+electros.push("Smart tv", "Pc");
+
+console.log(`Agrego al final del array dos (2) nuevos productos: ${electros}`);
+
 // d. Mostrar por la consola la cantidad de elementos que contiene el array.
+
+let longitud = electros.length;
+
+console.log(`Muestro por la consola la cantidad de elementos que contiene el array: ${longitud}`);
 
 // e. Buscar un elemento del array y crear una condición responsable de establecer 
 // si existe o no el producto dentro del array. De existir, se le debe mostrar el mensaje: 
