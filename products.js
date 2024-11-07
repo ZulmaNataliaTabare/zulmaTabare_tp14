@@ -70,7 +70,7 @@ if (electros.includes(electro) == true) {
 
 let separadosPorEspacio = electros.join(" ");
 
-console.log(separadosPorEspacio);
+console.log(`Aquí se unifican todos los elementos del array en una cadena de texto (string), separando los elementos por espacios en blanco: ${separadosPorEspacio}`);
 
 
 // g. Determinar la cantidad de elementos que posee la cadena de texto obtenida.
@@ -83,7 +83,11 @@ console.log(`La cantidad de elementos que posee la cadena de texto obtenida es: 
 // h. Cambiar el nombre de algún producto de la cadena de texto por otro, valiéndose de la función adecuada para ello.
 
 let nuevoElectros1 = separadosPorEspacio.replace("airfryer", "secarropas");
-console.log(nuevoElectros1); 
+console.log(`Aquí se le cambia el nombre a "airfryer" por "secarropas": ${nuevoElectros1}`); 
 
 // i.Con la cadena de texto obtenida generar un nuevo array con cada una de las palabras de la cadena de texto. 
 // Tener en cuenta que los elementos deben estar separados por una coma. En todos los casos se debe mostrar por consola el resultado obtenido.
+
+let nuevoArrayConComas = nuevoElectros1.split(" ");
+
+console.log(`Aquí con la cadena obtenida se genera un nuevo array con cada una de las palabras de la cadena de texto separadas por una coma: ${nuevoArrayConComas}`);
