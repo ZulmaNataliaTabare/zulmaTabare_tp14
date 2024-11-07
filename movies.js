@@ -29,7 +29,7 @@ movies.pop();
 
 movies.unshift(peliMasVendida)
 
-console.log(movies);
+console.log(`Esta es una lista de las películas, donde se destaca la película más vendida al principio de la lista: ${movies.join(", ")}`);
 
 
 // 4. Una vez terminada la actividad, nos indican que debemos crear una cadena de
@@ -44,10 +44,7 @@ console.log(movies);
 
 let estrenos = "Counter-Strike, NOP, Vértigo, Nick, Avatar"; 
 
-console.log(estrenos);
-
-
-console.log(estrenos.split(", "));
+console.log(`Estas son las películas a estrenar: ${estrenos.split(",  ")}`);
 
 
 // 5. Finalmente, el TechLeader te solicita crear una función que reciba por parámetro
@@ -57,9 +54,9 @@ console.log(estrenos.split(", "));
 
 function todasLasMovies(params1, params2 ) {
 
-    let todasLasMovies = params1.concat(params2.split(", "));
+    let todasLasMovies = params1.join(", ").concat(", ", params2.split(",  "));
 
-    return console.log(todasLasMovies);
+    return console.log(`Esta es una lista de todo el conjunto de películas: ${todasLasMovies}`);
     
 }
 
