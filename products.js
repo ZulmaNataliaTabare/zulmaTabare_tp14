@@ -22,13 +22,13 @@ console.log(`Este es el array principal: "${electros}"`)
 // Recuerda mostrar por la consola los resultados.
 
 
-function getRandomInt(max) {
+function elegirElementos(max) {
     return Math.floor(Math.random() * max);
 }
 
-let elPrimerElemento = electros[getRandomInt(electros.length)];
-let elSegundoElemento = electros[getRandomInt(electros.length)];
-let elTercerElemento = electros[getRandomInt(electros.length)];
+let elPrimerElemento = electros[elegirElementos(electros.length)];
+let elSegundoElemento = electros[elegirElementos(electros.length)];
+let elTercerElemento = electros[elegirElementos(electros.length)];
 
 
 console.log(`Accedo de manera arbitraria a diferentes elementos del array: "${elPrimerElemento}, ${elSegundoElemento}, ${elTercerElemento}"`)
