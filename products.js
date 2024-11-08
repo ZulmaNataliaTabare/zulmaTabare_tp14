@@ -21,11 +21,15 @@ console.log(`Este es el array principal: "${electros}"`)
 
 // Recuerda mostrar por la consola los resultados.
 
-let elPrimerElemento = electros[0];
 
-let elSegundoElemento = electros[1];
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
-let elTercerElemento = electros[2];
+let elPrimerElemento = electros[getRandomInt(electros.length)];
+let elSegundoElemento = electros[getRandomInt(electros.length)];
+let elTercerElemento = electros[getRandomInt(electros.length)];
+
 
 console.log(`Accedo de manera arbitraria a diferentes elementos del array: "${elPrimerElemento}, ${elSegundoElemento}, ${elTercerElemento}"`)
 
@@ -83,7 +87,7 @@ console.log(`La cantidad de elementos que posee la cadena de texto obtenida es: 
 // h. Cambiar el nombre de algún producto de la cadena de texto por otro, valiéndose de la función adecuada para ello.
 
 let nuevoElectros1 = separadosPorEspacio.replace("airfryer", "secarropas");
-console.log(`Aquí se le cambia el nombre a "airfryer" por "secarropas": ${nuevoElectros1}`); 
+console.log(`Aquí se le cambia el nombre a "airfryer" por "secarropas": ${nuevoElectros1}`);
 
 // i.Con la cadena de texto obtenida generar un nuevo array con cada una de las palabras de la cadena de texto. 
 // Tener en cuenta que los elementos deben estar separados por una coma. En todos los casos se debe mostrar por consola el resultado obtenido.
